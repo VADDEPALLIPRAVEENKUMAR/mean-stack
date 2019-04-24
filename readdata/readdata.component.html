@@ -1,0 +1,82 @@
+<div class="container">
+  
+  <div class="panel  panel-info" *ngFor="let x of employees">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{x.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+        <div class="row">
+          <div class="col-xs-4">
+            <img id="responsive" class="img-responsive img-fluid " [src]="x.photoPath"  />
+          </div>
+          <div class="col-xs-8">
+
+
+            <div class="row" id="vertical-align">
+              <div class="col-xs-6">
+                Gender
+              </div>
+              <div class="col-xs-6">
+                : {{x.gender}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Id
+              </div>
+              <div class="col-xs-6">
+                 : {{x.id}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                 ContactPreference
+              </div>
+              <div class="col-xs-6">
+                : {{x.contactPreference}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+               Email
+              </div>
+              <div class="col-xs-6">
+                : {{x.email}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                 Phone
+              </div>
+              <div class="col-xs-6">
+                 : {{x.phoneNumber}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                 Department
+              </div>
+              <div class="col-xs-6">
+                : {{x.department}}
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    DateofBirth
+                </div>
+                <div class="col-xs-6">
+                  :{{x.dateOfBirth | date}}
+                </div>
+              </div>
+            
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
